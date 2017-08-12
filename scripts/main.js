@@ -1,10 +1,13 @@
 $(document).ready(function() {
 
+	// Page Nav
+	$('.page-nav ul.sf-menu').superfish();
+
 	// Sitebar -> Popular Posts"
 	$('.sidebar.section .widget.PopularPosts .item-thumbnail').each(function() {
-        $(this).attr('style', 'background-image: url(' + $(this).find('img').attr('src') + ');');
-        $(this).css('display', 'block');
-    });
+		$(this).attr('style', 'background-image: url(' + $(this).find('img').attr('src') + ');');
+		$(this).css('display', 'block');
+	});
 
 	// Post Thumbnail
 	$('.main.section .blog-posts .date-posts .post-outer .post-thumbnail').each(function() {
